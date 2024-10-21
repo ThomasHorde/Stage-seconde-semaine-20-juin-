@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonight In Gotham - OpenClassrooms</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="header" role="banner">
+            <a aria-label="Tonight In Gothman" href="#" class="header-svg">
+                <svg role="img" alt="Logo de Batman" width="130" height="46" viewBox="0 0 130 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43.1341 0.512695H0.893433C19.9876 6.2592 21.2125 19.8957 19.4381 25.9957C61.5071 22.5752 65.2847 44.9797 65.2847 44.9797C69.7492 26.3378 97.8524 24.3424 110.96 25.6537C106.839 11.6979 121.835 3.0781 129.848 0.512695H86.7485C85.6496 9.95338 75.4156 11.0594 70.436 10.4323L69.2341 1.88091C68.6846 2.29138 68.0893 5.24444 67.8604 6.66966H62.5374C62.5374 5.71191 61.6216 3.19212 61.1637 2.05194L59.9617 10.4323C44.8512 10.4323 42.4473 3.81922 43.1341 0.512695Z" fill="black" stroke="black"/>
+                </svg>
+            </a>
+            <nav role="navigation" class="header-navigation" aria-label="main navigation">
+                <ul>
+                    <li class="header-navigation-item">
+                        <a href="#">Work</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="#">Story</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="#">Villians</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="#">Gadgets</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="header-search" action="" role="search">
+                <label class="sr-only" for="search">Search</label>
+                <svg aria-hidden="true" role="img" alt="" class="search-icon" width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="9.5" stroke="white"/>
+                    <line x1="17.3254" y1="15.6204" x2="24.3254" y2="21.6204" stroke="white"/>
+                </svg>
+                <input type="search" id="search" name="search" placeholder="search...">
+            </form>
+            <div class="header-dropdown">
+                <div class="header-dropdown-batman-icon-wrapper">
+                    <svg role="img" alt="" class="header-dropdown-batman-icon" width="35" height="53" viewBox="0 0 35 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="22" width="35" height="31">
+                        <ellipse cx="17.4694" cy="37.0239" rx="16.5717" ry="15.0137" fill="#C4C4C4"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                        <rect x="-1.55737" y="0.509216" width="38.0535" height="31.3248" fill="#C4C4C4"/>
+                        </g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5291 0.197937V8.93256C10.3446 9.57737 10.2458 10.2584 10.2458 10.9624C10.2458 15.0301 13.5434 18.3276 17.611 18.3276C21.6787 18.3276 24.9762 15.0301 24.9762 10.9624C24.9762 10.468 24.9275 9.9849 24.8346 9.51776V0.481201L23.1078 6.0601C21.759 4.54877 19.7961 3.59723 17.611 3.59723C15.517 3.59723 13.627 4.47114 12.286 5.87414L10.5291 0.197937Z" fill="#C4C4C4"/>
+                        <path d="M10.5291 8.93256L11.0098 9.07009L11.0291 9.00268V8.93256H10.5291ZM10.5291 0.197937L11.0068 0.0500952L10.0291 0.197937H10.5291ZM24.8346 9.51776H24.3346V9.56699L24.3442 9.61529L24.8346 9.51776ZM24.8346 0.481201H25.3346L24.357 0.333359L24.8346 0.481201ZM23.1078 6.0601L22.7348 6.39303L23.3238 7.05308L23.5854 6.20794L23.1078 6.0601ZM12.286 5.87414L11.8084 6.02199L12.0599 6.83441L12.6475 6.21962L12.286 5.87414ZM11.0291 8.93256V0.197937H10.0291V8.93256H11.0291ZM10.7458 10.9624C10.7458 10.3053 10.838 9.67062 11.0098 9.07009L10.0484 8.79503C9.85126 9.48411 9.74585 10.2114 9.74585 10.9624H10.7458ZM17.611 17.8276C13.8195 17.8276 10.7458 14.754 10.7458 10.9624H9.74585C9.74585 15.3062 13.2672 18.8276 17.611 18.8276V17.8276ZM24.4762 10.9624C24.4762 14.754 21.4026 17.8276 17.611 17.8276V18.8276C21.9549 18.8276 25.4762 15.3062 25.4762 10.9624H24.4762ZM24.3442 9.61529C24.4308 10.0505 24.4762 10.5009 24.4762 10.9624H25.4762C25.4762 10.435 25.4242 9.91932 25.325 9.42023L24.3442 9.61529ZM24.3346 0.481201V9.51776H25.3346V0.481201H24.3346ZM23.5854 6.20794L25.3122 0.629043L24.357 0.333359L22.6302 5.91226L23.5854 6.20794ZM17.611 4.09723C19.6477 4.09723 21.4768 4.9835 22.7348 6.39303L23.4808 5.72717C22.0412 4.11405 19.9445 3.09723 17.611 3.09723V4.09723ZM12.6475 6.21962C13.8981 4.91121 15.6591 4.09723 17.611 4.09723V3.09723C15.3749 3.09723 13.356 4.03107 11.9246 5.52867L12.6475 6.21962ZM10.0515 0.345779L11.8084 6.02199L12.7637 5.7263L11.0068 0.0500952L10.0515 0.345779Z" fill="#C4C4C4"/>
+                    </svg>
+                </div>
+                <p>
+                    <a class="header-dropdown-link" aria-haspopup="true" aria-expanded="false" href="#">
+                        <span class="header-dropdown-link-content">
+                            Batman
+                        </span>
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.33447L8.00465 8.13311L14.5973 1.33447" stroke="#E9E9E9" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </p>
+                <ul class="dropdown">
+                    <li>
+                        <a href="">
+                            My villians
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            My gadgets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Switch profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <main class="content">
+        <section>
+            <h1>Tonight In Gotham</h1>
+            <p>
+                No guns, no killing. Well, you see... I'm buying this hotel and setting some new rules about the pool area.
+            </p>
+            <p>
+                It's not who I am underneath but what I do that defines me. It's ends here. I can't do that as <a class="content-link" href="#">Bruce Wayne</a>... as a man. I'm flesh and blood. I can be ignored, destroyed. But as a symbol, I can be incorruptible, I can be everlasting.
+            </p> 
+            <p>
+                I'm Batman Hero can be anyone. Even a man knowing something as simple and reassuring as putting a coat around a young boy shoulders to let him know the world hadn't ended. 
+            </p> 
+                his isn't a car. It's ends here. It was a dog. It was a big dog.
+            <p>
+                I seek the means to <a class="content-link" href="#">fight injustice</a>. To turn fear against those who prey on the fearful. I'm not wearing hockey pads. It's not who I am underneath but what I do that defines me.
+            </p>
+            <h2>Joker on the loose</h2>
+            <p>
+                Swear to me! I'll be standing where l belong. Between you and the peopIe of Gotham. Well, you see... I'm buying this hotel and setting some new rules about the pool area. No guns, no killing. I will go back to Gotham and I will fight men Iike this but I will not become an executioner.
+            </p>
+            <p>
+                My anger outweights my guilt. It was a dog. It was a big dog. This isn't a car. I'll be standing where l belong. Between you and the peopIe of <a class="content-link" href="#">Gotham</a>.
+            </p>
+        </section>
+        <div class="decorative-aside yellow-bg">
+            <svg class="decorative-aside-image" width="474" height="164" viewBox="0 0 130 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43.1341 0.512695H0.893433C19.9876 6.2592 21.2125 19.8957 19.4381 25.9957C61.5071 22.5752 65.2847 44.9797 65.2847 44.9797C69.7492 26.3378 97.8524 24.3424 110.96 25.6537C106.839 11.6979 121.835 3.0781 129.848 0.512695H86.7485C85.6496 9.95338 75.4156 11.0594 70.436 10.4323L69.2341 1.88091C68.6846 2.29138 68.0893 5.24444 67.8604 6.66966H62.5374C62.5374 5.71191 61.6216 3.19212 61.1637 2.05194L59.9617 10.4323C44.8512 10.4323 42.4473 3.81922 43.1341 0.512695Z" fill="black" stroke="black"/>
+            </svg>
+        </div>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <nav class="footer-navigation" aria-label="footer navigation">
+            <ul>
+                <h3 class="footer-title">Contact</h3>
+                <li>
+                    <a class="footer-navigation-link" href="#">
+                        Call Alfred
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-navigation-link" href="#">
+                        Light the bat signal
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-navigation-link" href="#">
+                        Turn yourself in
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-navigation-link" href="#">
+                        Tell us what you think
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <h3 class="footer-title">Careers</h3>
+                <li>
+                    <a class="footer-navigation-link" href="#">
+                        Getting started
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-navigation-link" href="#">
+                        Available positions
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <h3 class="footer-title">Follow</h3>
+                </li>
+                <li>
+                    <a class="footer-social-icon" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                          </svg>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                    <a class="footer-social-icon" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a class="footer-social-icon" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-patterns">
+            <h3 class="footer-title">
+                Partners
+            </h3>
+            <img class="footer-police-logo" src="https://i.pinimg.com/564x/98/58/4c/98584cf7b839f929a6d7a7b876a09042.jpg" width="260" height="200" alt="City of Gothman Police Department">
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
